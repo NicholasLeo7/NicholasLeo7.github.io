@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content = "width=device-width,initial-scale=1.0">
+    <title>Nicholas Leo Resume</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script src="https://kit.fontawesome.com/aa50223961.js" crossorigin="anonymous"></script>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<section class="header" id ="header">
+    <nav>
+        <p class="hText">Nicholas Leo</p>
+        <div class="nav-links" id=navLinks>
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#Education">Education</a></li>
+                <li><a href="#Experience">Experience</a></li>
+                <li><a href="#Contact">Contact</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+<div class="text-box">
+    <h1>Master of Computer Science</h1>
+    <p>Welcome to my resume! I am Nicholas Leo, a recently graduated Software Engineer. <br>To partly show my prowess in Front-End Development, I created a site to display my Resume.</p>
+    <a href="" class="more-btn">Click here to learn more!</a>
+</div>
+</section>
+<!------------Education Section--------------->
+<section class= "Education" id = "Education">
+    <h1>Education and Skills</h1>
+    <div class ="row">
+        <div class = "degree-col">
+            <h3>Master's Degree</h3>
+            <h4>Sacred Heart University</h4>
+            <p class = "edDates">
+                September 2020 - December 2021
+            </p>
+            <h4>Relevant Coursework:</h4>
+            <p>
+                Advance Database Design, Deep Learning, Advanced Scripting with Python, Big Data Analytics, Object Oriented Java, Windows Interface Design
+            </p>
+        </div>
+        <div class = "degree-col">
+            <h3>Skills</h3>
+            <h4>Proficient in:</h4>
+            <ul class="skills">
+                <li>C</li>
+                <li>C++</li>
+                <li>C#</li>
+                <li>JAVA</li>
+                <li>PYTHON</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>.Net</li>
+                <li>R</li>
+                <li>SQL</li>
+                
+            </ul>
+        </div>
+        <div class = "degree-col">
+            <h3>Bachelor's Degree</h3>
+            <h4>Sacred Heart University</h4>
+            <p class = "edDates">
+                September 2016 - August 2020
+            </p>
+            <h4>Relevant Coursework:</h4>
+            <p>
+            Analysis & System Design, Data Structures, Discrete Structures, Assembly Language, 3D Digital Object Creation, Object Oriented Programming with C#, Advanced Game Programming, Operating Systems, Analysis of Algorithms, Human Computer Interaction. 
+            </p>
+        </div>
+    </div>
+</section>
+<!------------------Experience----------------->
+<section class="Experience" id = "Experience">
+    <h1>Workplace Experience</h1>
+    <div class="row">
+        <div class ="ExpCol">
+            <img src = "images/OfficeSpace.jpg">
+            <div class="Layer">
+                <h3>Office Technician</h3>
+                <ul class="expG" style="list-style-type:none;">
+                    <li>Digitized union members files allowing for them to be easily searched for and backed up. </li>
+                    <li>Created and managed a server-based file system, to be accessed by other personnel. </li>
+                </ul>
+            </div>
+        </div>
+        <div class ="ExpCol">
+            <img src = "images/ComputerLab.jpg">
+            <div class="Layer">
+                <h3>Lab Technician</h3>
+                <ul class="expGC" style="list-style-type:none;">
+                    <li>Engaged with university students, teaching them how to use the VR headset. </li>
+                    <li>Hands on experience with helping students with their own technologies, such as phones, laptops or tablets.</li>
+                    <li>Upgrading software and implement new programs for the lab. </li>
+                </ul>
+            </div>
+        </div>
+        <div class ="ExpCol">
+            <img src = "images/gameDesign.jpg">
+            <div class="Layer">
+                <h3>Game Design Internship</h3>
+                <ul class="expGR" style="list-style-type:none;">
+                    <li>Usage of C# to code functions within Stardust Mystery. </li>
+                    <li>Perform bug testing and report issues within the game with ways to fix them. </li>
+                    <li>Experience with Maya, Unity and other game design software.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<!----------Contact------------>
+<section class="Contact" id = "Contact">
+    <h1>For more inforamtion reach out to me here!</h1>
+    <button class = "contact-btn">
+    CONTACT
+    </button>
+</section>
+<section class = "ScrollToTop">
+<button class = "btnScrollToTop">
+    <a href="#header"><i class="fa-solid fa-arrow-up"></i></a>
+</button>    
+</section>
+<!---------------------------------CONTACT FORM -------------------->
+    
+<div class = "modal" id = "email-modal">
+    <div class ="modal-content">
+        <span class = "closebtn">&times;</span>
+        <div class = "modal-content-left">
+            <img id = "modal-img" src ="images/Program.png"> 
+        </div>
+        <div class = "modal-content-right">
+        <form target = "_blank" action="https://formsubmit.co/nicholasleo7@gmail.com" method="POST" class="modal-form" id="form">
+            <h1>Contact me here!</h1>
+            <div class = "Form-Validation">
+                <input type="text" class="modal-input" id = "name" name = "Name" placeholder="Enter your Name" required>
+                <p>Error message</p>
+            </div>
+            <div class = "Form-Validation">
+                <input type="email" class="modal-input" id = "subject" name = "Subject" placeholder="Please enter your email" required>
+                <p>Error message</p>
+            </div>
+            <div class = "Form-Validation">
+                <input type="text" class="modal-input-message" id = "message" name = "Message" rows = "5" placeholder="Enter your message" required>
+                <p>Error message</p>
+            </div>
+        <input type="submit" class="modal-input-btn" value="Send Message">
+        <h2>Reach out to me on my linkedin here!   
+        <a href="https://www.linkedin.com/in/nickleo/"><i class="fa-brands fa-linkedin"></i></a></h2>
+        </form>
+        </div>
+    </div>
+</div>
+    
+    
+<!------------JavaScript----->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+</script>
+<script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor =>{
+        anchor.addEventListener("click", function(e){
+        e.preventDefault();
+        document.querySelector(this.getAttribute("href")).scrollIntoView({
+            behavior:"smooth"
+            })
+        })
+    })
+</script>
+<script>
+    const btnScrollToTop = document.querySelector(".btnScrollToTop");
+    window.addEventListener("scroll", () =>{
+        if (window.pageYOffset > 100){
+        btnScrollToTop.classList.add("active");
+    } else{
+        btnScrollToTop.classList.remove("active");
+    }
+                            })
+</script>
+<script src="button.js"></script>
+</body>
+</html>
